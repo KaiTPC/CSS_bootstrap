@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice absolute</title>
+<!-- 回去練習 https://github.com/chengkk0910/s20230428_php/tree/main/s20230504 -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* position:relative */
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap:wrap;
+        }
+
+        .box {
+            width: 33.3%;
+            height: 300px;
+            background-color: chartreuse;
+            position: relative;
+        }
+
+        .box1 {
+            word-wrap: break-word;
+            width: 33.3%;
+            height: 160px;
+        }
+
+        .box2 {
+            width: 33.3%;
+            height: 160px;
+        }
+
+        .box3 {
+            width: 33.3%;
+            height: 160px;
+        }
+
+        .box>img {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            max-width: 100%;
+        }
+
+        .box>.img-top {
+            position: absolute;
+            right: 0;
+        }
+        .box > .img-bottom {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1">
+            <img src="https://cdn.dribbble.com/userupload/6710179/file/original-ed8222050e0e31992312d01a37c75b0f.png?compress=1&resize=1600x1200"
+                width="150px" height="80px" alt="">
+        </div>
+    </div>
+<br>
+
+    <div class="container">
+        <div class="box box2">
+            <img src="https://cdn.dribbble.com/users/1853242/screenshots/21292101/67cad04a-f5e3-47b6-b991-6d7b06dae67b_4x.png?compress=1&resize=1000x750&vertical=top"
+                width="150px" height="80px" alt="">
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="box box3">
+            <img src="https://cdn.dribbble.com/userupload/6721510/file/original-401ee43ac1725dc4d16ed2de8402764e.png?compress=1&resize=1024x686"
+                width="150px" height="80px" alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>
